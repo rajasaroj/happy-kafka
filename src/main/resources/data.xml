@@ -1,0 +1,32 @@
+<Messages>
+    <Message>
+        <Module>B2B</Module>
+        <Qty>20</Qty>
+        <Id>200</Id>
+    </Message>
+    <Message>
+        <Module>B2B</Module>
+        <Qty>21</Qty>
+        <Id>201</Id>
+    </Message>
+    <Message>
+        <Module>EOD</Module>
+        <Qty>10</Qty>
+        <Id>101</Id>
+    </Message>
+    <Message>
+        <Module>EOD</Module>
+        <Qty>11</Qty>
+        <Id>102</Id>
+    </Message>
+    <Message>
+        <Module>RTM</Module>
+        <Qty>30</Qty>
+        <Id>301</Id>
+    </Message>
+    <Message>
+        <Module>RTM</Module>
+        <Qty>31</Qty>
+        <Id>301</Id>
+    </Message>
+</Messages>
