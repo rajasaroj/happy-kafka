@@ -10,16 +10,44 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '43891636-3b5a-4a0d-8f61-66f29c821af8'
-  imageRepository: 'rajasarojhappykafka'
+  dockerRegistryServiceConnection: '684185c2-fcb2-4e62-a0ea-e3e2648eec29'
+  imageRepository: 'happykafkapoc'
   containerRegistry: 'ragaetmdemo.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
+  REMOTE_ADDR: 'https://github.com/rajasaroj/happy-kafka'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
 stages:
+- stage: running_git_commands
+  displayName: Syncup Azure Repo with GitHub Repo
+  jobs:
+    - job: initiate
+      displayName: initiate
+      pool: 
+        name: 'etm-agents-pool'
+      continueOnError: false
+      steps:
+        - checkout: self
+          clean: true
+          persistCredentials: true
+          displayName: run_commands
+        - bash: | 
+            git checkout master
+            git remote add repoGithub $(REMOTE_ADDR)
+            git fetch repoGithub master
+            git reset --hard repoGithub/master
+            git pull --rebase repoGithub master
+            MY_PAT=msy5swpwewvdhbxmh43gbdtgzdscys5pkwfgg6c2ei7drw7hv6iq
+            B64_PAT=$(printf ":%s" "$MY_PAT" | base64)
+            echo "B64 = ${B64_PAT}"
+            echo "MY_PAT = ${MY_PAT}"
+            git -c http.extraHeader="Authorization: Basic ${B64_PAT}" push origin master -f 
+
+
+
 - stage: Build
   displayName: Build and push stage
   jobs:
