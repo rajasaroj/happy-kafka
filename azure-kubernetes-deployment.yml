@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ragaetmdemo
-        image: ragaetmdemo.azurecr.io/happykafkapoc:47
+        image: ragaetmdemo.azurecr.io/happykafkapoc:etm-kafka-producer-47
       imagePullSecrets:
       - name: acr-secret

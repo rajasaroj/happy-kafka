@@ -14,7 +14,7 @@ variables:
   imageRepository: 'happykafkapoc'
   containerRegistry: 'ragaetmdemo.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: 'etm-kafka-producer-$(Build.BuildId)'
   REMOTE_ADDR: 'https://github.com/rajasaroj/happy-kafka'
 
   # Agent VM image name
