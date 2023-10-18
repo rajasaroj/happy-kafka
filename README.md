@@ -12,3 +12,6 @@
 
 ## Kafka hosted on Azure Vm Infrastructure
 ![AzureVm](./azureInfra/Diagrams/Kafka%20Architecture.drawio.png)
+
+## Kafka services Architecture
+![kafkaServices](./azureInfra/Diagrams/KafkaServicesArchitecture.png)
