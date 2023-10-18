@@ -7,8 +7,8 @@
 
 #### This is poc to create kafka producers create xml messages and publish on topic kafka topic, manage devops pipeline, Automate VM provisioning and Kafka infra deployment.
 
-## Azure Pipeline Automated CIDI Pipeline Architecture
+## Azure Pipeline Automated CIDI Pipeline Infrastructure
 ![AzurePipeline](./azureInfra/Diagrams/Final%20CIDI%20Architecture%20Diagram.png)
 
-## Kafka hosted on Azure Vm Architecture
+## Kafka hosted on Azure Vm Infrastructure
 ![AzureVm](./azureInfra/Diagrams/Kafka%20Architecture.drawio.png)
