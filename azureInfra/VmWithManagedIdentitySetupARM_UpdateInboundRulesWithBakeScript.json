@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_az_raga_kafka_ensemble_node_name": {
-            "defaultValue": "az-raga-kafka-consumer-node",
+            "defaultValue": "az-raga-kafka-broker-node",
             "type": "String"
         },
         "networkInterfaces_az_raga_kafka_ensemble_node291_name": {
-            "defaultValue": "az-raga-kafka-consumer-node291",
+            "defaultValue": "az-raga-kafka-broker-node291",
             "type": "String"
         },
         "networkSecurityGroups_az_raga_kafka_ensemble_node_nsg_name": {
-            "defaultValue": "az-raga-kafka-consumer-node-nsg",
+            "defaultValue": "az-raga-kafka-broker-node-nsg",
             "type": "String"
         },
         "virtualNetworks_default_externalid": {
