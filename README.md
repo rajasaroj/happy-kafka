@@ -11,4 +11,4 @@
 ![AzurePipeline](./azureInfra/Diagrams/Final%20CIDI%20Architecture%20Diagram.png)
 
 ## Kafka hosted on Azure Vm Architecture
-![AzurePipeline](./azureInfra/Diagrams/Kafka%20Architecture.drawio.png)
+![AzureVm](./azureInfra/Diagrams/Kafka%20Architecture.drawio.png)
